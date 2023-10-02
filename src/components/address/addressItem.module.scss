@@ -1,0 +1,38 @@
+.addressItem {
+  background-color: #3a3d3e;
+  height: fit-content;
+  cursor: pointer;
+  min-width: 300px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 1px 1px 9px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 15px;
+
+  .title {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .listOptions {
+    display: flex;
+    gap: 5px;
+    justify-self: end;
+    flex-wrap: wrap;
+
+    li {
+      padding: 3px 10px;
+      background-color: #282c2d;
+      border-radius: 2px;
+    }
+  }
+}
+
+
+.active {
+  transition: background-color .3s;
+  background-color: #3f4648;
+}
+

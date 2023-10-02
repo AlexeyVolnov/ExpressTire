@@ -1,13 +1,12 @@
 import './App.css'
-import Home from "./components/Pages/Home.tsx";
-
+import ContactPage from "./components/Pages/ContactPage.tsx";
 
 function App() {
 
 
   return (
-     <div className={''}>
-       <Home/>
+     <div>
+       <ContactPage/>
      </div>
   )
 }

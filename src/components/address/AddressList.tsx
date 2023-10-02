@@ -1,5 +1,6 @@
 import {FC} from "react";
 import AddressItem from "./AddressItem.tsx";
+import {useAppSelector} from "../../hooks/hooks.ts";
 
 
 interface IAddressListProps {
@@ -8,10 +9,11 @@ interface IAddressListProps {
 
 
 const AddressList: FC<IAddressListProps> = ({}) => {
+const addresses = useAppSelector((state)=>state.addressSlice.pickPoints)
   return (
-     <div>
-        <AddressItem/>
-     </div>
+     <ul>
+       {addresses.map(address=><AddressItem key={address.address} address={address}/>)}
+     </ul>
   )
 }
 

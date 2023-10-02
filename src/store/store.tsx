@@ -1,10 +1,10 @@
 import {configureStore} from "@reduxjs/toolkit";
-import itemsSlice from "./itemsSlice.tsx";
+import addressSlice from "./AddressSlice.tsx";
 
 
 const store = configureStore({
   reducer:{
-    itemsSlice
+    addressSlice
   }
 })
 
@@ -16,6 +16,6 @@ export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch
 
 
-
+export default store
 
 

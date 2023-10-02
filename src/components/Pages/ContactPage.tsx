@@ -1,4 +1,5 @@
 import {FC} from "react";
+import Contact from "../contact/Contact.tsx";
 
 
 interface IContactPageProps {
@@ -9,7 +10,7 @@ interface IContactPageProps {
 const ContactPage: FC<IContactPageProps> = ({}) => {
   return (
      <div>
-
+      <Contact/>
      </div>
   )
 }
