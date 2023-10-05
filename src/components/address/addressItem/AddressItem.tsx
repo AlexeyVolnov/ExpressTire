@@ -1,8 +1,8 @@
 import {FC} from "react";
 import style from './addressItem.module.scss'
-import {TypeAddress} from "../../types/TypeAddress.ts";
-import {useAppDispatch, useAppSelector} from "../../hooks/hooks.ts";
-import {mapCenter} from "../../store/AddressSlice.tsx";
+import {TypeAddress} from "../../../types/TypeAddress.ts";
+import {useAppDispatch, useAppSelector} from "../../../hooks/hooks.ts";
+import {mapCenter} from "../../../store/AddressSlice.tsx";
 
 interface IAddressItemProps {
   address: TypeAddress

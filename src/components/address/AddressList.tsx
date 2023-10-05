@@ -1,5 +1,5 @@
 import {FC} from "react";
-import AddressItem from "./AddressItem.tsx";
+import AddressItem from "./addressItem/AddressItem.tsx";
 import {useAppSelector} from "../../hooks/hooks.ts";
 
 
